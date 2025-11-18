@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Yama Apps</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="main-box">
+    <!-- Header section -->
+    <header>
+        <h1 class="head">TO DO LIST APPS</h1>
+    </header>
+
+    <!-- Main content goes here -->
+    <main>
+        <!-- Form Section -->
+        <section class="form-section">
+            <form>
+                <!-- Todo Input -->
+                <input type="text" class="enter" id="todo-input" placeholder="Enter a new to do item">
+
+                <!-- Date Input -->
+                <input type="date" class="enter" id="todo-date" placeholder="Enter due date">
+            </form> 
+
+            <!-- Add Button -->
+            <button type="button" onclick="addTodo();" class="enter-button">Add
+                To do</button>
+        </section>
+
+        <!-- Action Section -->
+        <section class="flex pt-2 justify-between">
+            <!-- Filter Options -->
+            <button onclick="filterTodos();" class="border rounded p-2 bg-blue-500 text-white">Filter To do</button>
+
+            <!-- Clear All Button -->
+            <button type="button" onclick="clearTodos();"  class="border rounded p-2 bg-red-500 text-white">Clear All To do</button>
+        </section>
+        <div id="filter-options"></div>
+
+        <!-- Todo List Section -->
+        <section class="pt-2">
+            <header>
+                <h1 class="text-2xl font-semibold">List of To do</h1>
+            </header>
+
+            <ul class="pt-2" id="todo-list">
+                <!-- Todo items will be dynamically added here -->
+                <li>No to do available</li>
+            </ul>
+        </section>
+    </main>
+    </div>
+    <!-- Footer section -->
+    <footer class="pt-5">
+        <p>&copy; 2025 Todo List Yama Apps</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

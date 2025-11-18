@@ -1,0 +1,44 @@
+body {
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.form-section {
+    display: flex;
+    gap: 8px;
+}
+
+.head {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.enter {
+    background-color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.main-box {
+  max-width: 500px;       
+  margin: 40px auto;      
+  padding: 20px;
+  border: 2px solid #ffffffaa;
+  border-radius: 12px;
+  background: #ffffff22;  
+  backdrop-filter: blur(6px);
+  background-color: white;
+}
+
+.enter-button {
+  border: 1px solid #000;     
+  border-radius: 0.5rem;      
+  padding: 1px;            
+  background-color: #22c55e;  
+  color: white; 
+}
