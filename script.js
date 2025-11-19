@@ -53,9 +53,9 @@ function filterTodos() {
     }
 
     filterBox.innerHTML = `
-        <button class="border rounded p-2 bg-gray-200" onclick="filterBy('today')">Hari Ini</button>
-        <button class="border rounded p-2 bg-gray-200 ml-2" onclick="filterBy('future')">Akan Datang</button>
-        <button class="border rounded p-2 bg-gray-200 ml-2" onclick="filterBy('past')">Masa Lalu</button>
+        <button class="border rounded p-2 bg-gray-200" onclick="filterBy('today')">Today</button>
+        <button class="border rounded p-2 bg-gray-200 ml-2" onclick="filterBy('future')">Future</button>
+        <button class="border rounded p-2 bg-gray-200 ml-2" onclick="filterBy('past')">Past</button>
     `;
 }
 
