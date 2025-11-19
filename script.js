@@ -115,3 +115,15 @@ function filterBy(type) {
         `;
     });
 }
+
+function saveTodos() {
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function loadTodos() {
+    const saved = localStorage.getItem("todos");
+    if (saved) {
+        todos = JSON.parse(saved);
+    }
+}
+
